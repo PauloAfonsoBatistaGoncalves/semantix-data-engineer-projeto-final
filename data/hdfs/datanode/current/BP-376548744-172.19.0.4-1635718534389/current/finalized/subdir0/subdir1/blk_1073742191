@@ -1,3 +1,0 @@
-v1
-{"path":"hdfs://namenode:8020/user/paulo/stream_iris/path/part-00000-dea58c31-8236-47b8-8aee-10858537b974-c000.csv","size":2400,"isDir":false,"modificationTime":1635742944044,"blockReplication":2,"blockSize":268435456,"action":"add"}
-{"path":"hdfs://namenode:8020/user/paulo/stream_iris/path/part-00001-49d74162-9b60-4799-8305-bc9885f9a115-c000.csv","size":2400,"isDir":false,"modificationTime":1635742944058,"blockReplication":2,"blockSize":268435456,"action":"add"}
