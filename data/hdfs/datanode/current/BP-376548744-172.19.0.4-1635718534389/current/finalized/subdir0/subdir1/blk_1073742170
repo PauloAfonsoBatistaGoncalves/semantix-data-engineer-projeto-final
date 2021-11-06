@@ -1,0 +1,6 @@
+(topic-kvspark,0,null,kafka-console-consumer.sh --bootstrap-server kafka:9092 --topic topic-kvspark)
+(topic-kvspark,0,null,1, Msg1)
+(topic-kvspark,0,null,2, Msg2)
+(topic-kvspark,0,null,3, Msg3)
+(topic-kvspark,0,null,4, Msg4)
+(topic-kvspark,0,null,5, Msg5)
