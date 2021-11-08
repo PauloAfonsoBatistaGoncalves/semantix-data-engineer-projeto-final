@@ -135,8 +135,10 @@ object ProjetoScala {
     casos_recuperados_e_acompanhamento_view.write.saveAsTable("projeto_final.casos_recuperados_2")
   }
 
-  def salvandoSegundaVisualizacao(casos_recuperados_e_acompanhamento_view: DataFrame): Unit ={
-    casos_recuperados_e_acompanhamento_view.write.saveAsTable("projeto_final.casos_recuperados_2")
+  def salvandoSegundaVisualizacao(casos_confirmados_view:DataFrame): Unit ={
+    casos_confirmados_view.write.format("parquet")
+      .option("compression","snappy")
+      .saveAsTable("projeto_final.casos_confirmados")
   }
 
   def salvandoTerceiraVisualizacao(obitos_acumulados_view: DataFrame): Unit ={
