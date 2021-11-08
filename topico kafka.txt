@@ -1,0 +1,5 @@
+topico kafka
+
+kafka-topics.sh --bootstrap-server kafka:9092 --topic obitosConfirmados --create --partitions 1 --replication-factor 1
+kafka-console-consumer.sh --bootstrap-server kafka:9092 --topic obitosConfirmados
+kafka-topics.sh --bootstrap-server kafka:9092 --topic obitosConfirmados --delete
