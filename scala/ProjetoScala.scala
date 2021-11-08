@@ -87,7 +87,6 @@ object ProjetoScala {
         max("emAcompanhamentoNovos").alias("EmAcompanhamento")
       )
 
-    casos_recuperados_e_acompanhamento_view.write.saveAsTable("projeto_final.casos_recuperados_2")
     casos_recuperados_e_acompanhamento_view.show()
     return casos_recuperados_e_acompanhamento_view;
   }
