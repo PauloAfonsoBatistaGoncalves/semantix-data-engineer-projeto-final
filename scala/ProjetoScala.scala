@@ -33,7 +33,7 @@ object ProjetoScala {
 
     spark.sql("drop table if exists painel_covid_2")
     spark.sql("drop table if exists casos_recuperados_2")
-    spark.sql("drop table if exists casos_recuperados_2")
+    spark.sql("drop table if exists casos_confirmados_2")
   }
 
   def leituraCsv(spark: SparkSession): DataFrame ={
@@ -138,7 +138,7 @@ object ProjetoScala {
   def salvandoSegundaVisualizacao(casos_confirmados_view:DataFrame): Unit ={
     casos_confirmados_view.write.format("parquet")
       .option("compression","snappy")
-      .saveAsTable("projeto_final.casos_confirmados")
+      .saveAsTable("projeto_final.casos_confirmados_2")
   }
 
   def salvandoTerceiraVisualizacao(obitos_acumulados_view: DataFrame): Unit ={
